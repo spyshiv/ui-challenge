@@ -1,0 +1,150 @@
+/*------------------------main page------------------------------*/
+
+/*Global css*/
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+a{
+  color: #000;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.row {
+  margin-left: initial;
+  margin-right: initial;
+}
+
+.col {
+  padding: 0;
+  margin: 0;
+}
+
+
+/*----------navbar header-----------*/
+.nav-header {
+  height: 63px;
+  width: 100%;
+}
+
+.nav-header .logo {
+  background-color: #34495e;
+  float: left;
+  width: 100px;
+}
+
+.nav-header .main-navbar {
+  background-color: #1abc9c;
+  width: 100%;
+  height: inherit;
+}
+
+.nav-header .main-navbar .user-panel {
+  float: right;
+  height: inherit;
+  padding: 20px;
+}
+
+.nav-header .main-navbar .user-panel p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.menu-container {
+  background-color: #2c3e50;
+  height: 70px;
+  width: 100%;
+}
+
+.menu {
+  height: inherit;
+  position: relative;
+  width: 100px;
+}
+
+.menu-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu-title p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu-list-panel {
+  background-color: #2c3e50;
+  min-height: 630px;
+  text-align: center; 
+  width: 100px;
+}
+
+.menu-list-panel ul {
+  width: 100%;
+}
+
+.menu-list-panel li {
+  font-size: 30px;
+  padding-top: 40px;
+  position: relative;
+  width: 100%;
+}
+
+.menu-list-panel li a {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-tabs {
+  border:0;
+}
+.nav-tabs>li>a,
+.nav-tabs>li>a:focus,
+.nav-tabs>li>a:hover {
+  background-color: #2c3e50;
+  border:0;
+  color: #fff;
+}
+.nav-tabs>li.active>a, 
+.nav-tabs>li.active>a:focus, 
+.nav-tabs>li.active>a:hover {
+  background-color: #2c3e50;
+  border:0;
+  color: #fff;
+}
+
+.nav-tabs>li.active a {
+  position: relative;
+}
+
+.nav-tabs>li.active a:after {
+  position: absolute;
+  right: -10px;
+  content: "\25CF";
+}
+
+.menu-list-panel li:nth-child(1){
+  color: #fff;
+  font-size: 30px;
+  padding-top: 20px;
+  position: relative;
+}
+
+
+.progress-timeline {
+  position: relative;
+  width: 100%;
+  height: 
+}
