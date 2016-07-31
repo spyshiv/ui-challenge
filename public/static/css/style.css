@@ -5,6 +5,12 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 p {
   margin: 0;
 }
@@ -142,6 +148,11 @@ a:hover {
   position: relative;
 }
 
+.main-container {
+  background-color: #ecf0f1;
+}
+
+/*-------------progress page---------------*/
 .progress-wrapper {
   height: 630px;
   position: relative;
@@ -293,3 +304,166 @@ a:hover {
     color: #fff;
   }
 }
+
+/*------------button page---------*/
+.switch-wrapper {
+  height: 630px;
+  position: relative;
+  width: 100%;
+}
+
+.switch-title {
+  text-align: center;
+  padding-top: 90px;
+  width: 100%;
+}
+
+.switch-title h2 {
+  color: #34495e;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+.toggle {
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+  user-select: none;
+}
+
+.toggle--checkbox {
+  display: none;
+}
+
+.toggle--btn {
+  display: block;
+  margin: 0 auto;
+  font-size: 1.4em;
+  transition: all 350ms ease-in;
+}
+.toggle--btn:hover {
+  cursor: pointer;
+}
+
+.toggle--btn, .toggle--btn:before, .toggle--btn:after,
+.toggle--checkbox,
+.toggle--checkbox:before,
+.toggle--checkbox:after,
+.toggle--feature,
+.toggle--feature:before,
+.toggle--feature:after {
+  transition: all 250ms ease-in;
+}
+.toggle--btn:before, .toggle--btn:after,
+.toggle--checkbox:before,
+.toggle--checkbox:after,
+.toggle--feature:before,
+.toggle--feature:after {
+  content: '';
+  display: block;
+}
+
+.toggle--switch .toggle--btn {
+  position: relative;
+  width: 80px;
+  height: 30px;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #fff;
+  background: #1abc9c;
+  background-position: -70px 0;
+  background-size: 200% 100%;
+}
+
+.toggle--switch .toggle--btn, .toggle--switch .toggle--btn:before {
+  border-radius: 4px;
+}
+
+.toggle--switch .toggle--btn:before {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 30px;
+  border: 4px solid #1abc9c;
+  background-image: linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, 0.15) 100%);
+  background-color: #2c3e50;
+  background-size: 5px 5px;
+  text-indent: -100%;
+}
+
+.toggle--switch .toggle--feature {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: 30px;
+  text-shadow: 0 1px 2px #666;
+}
+
+.toggle--switch .toggle--feature:before, .toggle--switch .toggle--feature:after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.toggle--switch .toggle--feature:before {
+  content: attr(data-label-on);
+  left: -60%;
+}
+
+.toggle--switch .toggle--feature:after {
+  content: attr(data-label-off);
+  right: 16%;
+}
+
+.toggle--switch .toggle--checkbox:checked + .toggle--btn {
+  background-position: 0 0;
+}
+
+.toggle--switch .toggle--checkbox:checked + .toggle--btn:before {
+  left: calc(100% - 30px);
+}
+
+.toggle--switch .toggle--checkbox:checked + .toggle--btn .toggle--feature:before {
+  left: 20%;
+}
+
+.toggle--switch .toggle--checkbox:checked + .toggle--btn .toggle--feature:after {
+  right: -60%;
+}
+
+.button-title {
+  text-align: center;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.button-title h2 {
+  color: #34495e;
+}
+
+
+/*------------checklist page---------*/
+.checklist-wrapper {
+  height: 630px;
+  position: relative;
+  width: 100%;
+}
+
+.checklist-title {
+  text-align: center;
+  padding-top: 90px;
+  width: 100%;
+}
+
+.checklist-title h2 {
+  color: #34495e;
+}
+
