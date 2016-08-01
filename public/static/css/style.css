@@ -127,7 +127,7 @@ a:hover {
 .nav-tabs>li.active>a:hover {
   background-color: #2c3e50;
   border:0;
-  color: #fff;
+  color: #1abc9c;
 }
 
 .nav-tabs>li.active a {
@@ -135,6 +135,7 @@ a:hover {
 }
 
 .nav-tabs>li.active a:after {
+  color: #ecf0f1;
   content: "\25CF";
   position: absolute;
   right: -10px;
@@ -808,20 +809,93 @@ i.list-icon {
 /*/                Responsive                 /*/
 /*---------------------------------------------*/
 
-@media only screen and (max-width: 1200px){
-
+@media only screen and (min-width: 992px){
+  .mobile-navbar {
+    display: none;
+  }
 }
 
 
 @media only screen and (max-width: 992px){
+  
+  .menu-list-panel {
+    display: none;
+  }
 
+  .mobile-navbar {
+    width: 100%;
+    position: relative;
+  }
+
+  .main-container ul.nav-tabs {
+    background-color: #95a5a6;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+
+  .tab-content {
+    width: 100%;
+  }
+
+  .switch-wrapper {
+    padding: initial;
+  }
 }
 
 
 @media only screen and (max-width: 768px){
-
+  
 }
 
 @media only screen and (max-width: 480px){
+  
+  .menu-title p {
+    font-size: 16px;
+  }
 
+  .username {
+    font-size: 12px;
+  }
+
+  .progress-timeline {
+    height: 60px;
+    padding: 10px 30px 10px 30px;
+  }
+
+  .progress-bar-wrapper{
+    height: 50px;
+  }
+
+  .progress-bar-wrapper .icon {
+    font-size: 28px;
+  }
+
+  .progress-title h2,
+  .switch-title h2,
+  .button-title h2,
+  .checklist-title h2 {
+    font-size: 18px;
+  }
+
+  .progress-packing, 
+  .progress-transit,
+  .progress-deliver {
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+  }
+
+  .button-bar-1,
+  .button-bar-2,
+  .button-bar-3,
+  .button-bar-4 {
+    float: left;
+    height: 2px;
+  }
+  
+  .button-wrapper p {
+    font-size: 10px;
+  }
 }

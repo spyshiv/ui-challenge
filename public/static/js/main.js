@@ -34,7 +34,7 @@ $(document).ready(function(){
 			'background-color': '#fff',
 		});
 		$(this).find(".icon-share").css({
-			'color':'#2c3e50'
+			'color':'#1abc9c'
 		})
     });
 
@@ -50,7 +50,7 @@ $(document).ready(function(){
 			'background-color': '#fff',
 		});
 		$(this).find(".icon-download").css({
-			'color':'#2c3e50'
+			'color':'#1abc9c'
 		})
     });
 
@@ -66,7 +66,7 @@ $(document).ready(function(){
 			'background-color': '#fff',
 		});
 		$(this).find(".icon-envelope-o").css({
-			'color':'#2c3e50'
+			'color':'#1abc9c'
 		})
     });
 })
