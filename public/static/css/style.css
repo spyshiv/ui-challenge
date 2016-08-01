@@ -600,7 +600,9 @@ a:hover {
 
 }
 
+
 /*------------checklist page---------*/
+
 .checklist-wrapper {
   height: 630px;
   position: relative;
@@ -609,7 +611,7 @@ a:hover {
 
 .checklist-title {
   text-align: center;
-  padding-top: 90px;
+  padding-top: 70px;
   width: 100%;
 }
 
@@ -617,3 +619,83 @@ a:hover {
   color: #34495e;
 }
 
+.checklist-panel {
+  border-radius: 20px;
+  padding: 20px 12px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  background-color: #fff;
+}
+
+.checklist-single-wrapper {
+  height: 60px;
+  padding: 2px 12px;
+  position: static;
+  width: 100%;
+}
+.checklist-single {
+  border-bottom: 1px solid #f0f0f0;
+  height: 100%;
+}
+
+.checklist-single .checklist-p,
+.user-share,
+.user-download,
+.user-message {
+  position: relative;
+  float: left;
+  height: 100%; 
+}
+
+.checklist-single .checklist-p {
+  width: 70%;
+}
+
+i.list-icon {
+  position: absolute;
+  color: #2c3e50;
+  font-size: 24px;
+  padding: 0px 5px;
+  top: 30%;
+}
+
+.user-share .list-icon,
+.user-download .list-icon,
+.user-message .list-icon {
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.user-share,
+.user-download,
+.user-message {
+  outline: 2px solid #fff;
+  width: 10%;
+}
+
+.checklist-single .checklist-p p {
+  font-size: 14px;
+  float: left;
+  padding: 0px 2px;
+  width: 270px;
+  height: 50px;
+  line-height: 50px;
+}
+
+.checklist-single .checklist-p p i {
+  float: right;
+  width: 10%;
+}
+
+.active-checklist {
+  color: #f39c12;
+}
+
+.active-checklist .list-icon{
+  color: #f39c12;
+}
