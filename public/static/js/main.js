@@ -1,4 +1,8 @@
 $(document).ready(function(){
+	$(".username").click(function(){
+		$(".profile-wrapper").toggle();
+	})
+
 	$(".checklist-single-wrapper").hover(function(){
 		$(this).removeClass("active-checklist");
 		$(this).find(".checklist-single .checklist-p, .icon-eye ").css({

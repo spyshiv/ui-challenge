@@ -52,18 +52,6 @@ a:hover {
   height: inherit;
 }
 
-.nav-header .main-navbar .user-panel {
-  float: right;
-  height: inherit;
-  padding: 20px;
-}
-
-.nav-header .main-navbar .user-panel p {
-  color: #fff;
-  font-size: 16px;
-  font-weight: bold;
-}
-
 .menu-container {
   background-color: #2c3e50;
   height: 70px;
@@ -150,6 +138,100 @@ a:hover {
 
 .main-container {
   background-color: #ecf0f1;
+}
+
+.user-panel {
+  position: absolute;
+  right: 20px;
+  text-align: center;
+}
+
+.username {
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #16a085;
+  height: 63px;
+  line-height: 63px;
+  width: 150px;
+  float: right;
+  position: relative;
+
+}
+
+.username p:after {
+  content: "";
+  width: 0; 
+  height: 0; 
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #fff;
+  position: absolute;
+  right: 6%;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.profile-wrapper {
+  margin-top: 5px;
+  position: relative;
+  display: none;
+  background-color: #fff;
+  height: 70px;
+  padding: 10px;
+}
+
+.profile-wrapper:before {
+  position: absolute;
+  top:-5px;
+  right: 6%;
+  content: ""; 
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+}
+
+.profile-wrapper .profile-logos {
+  padding: 5px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  float: left;
+}
+
+.profile-wrapper .profile-logos .profile-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #d35400;
+}
+
+.main-navbar .profile-wrapper .profile-logos p {
+  color: #fff;
+  position: absolute;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.profile-wrapper .profile-details{
+  padding: 5px;
+  position: relative;
+  float: right;
+}
+
+.main-navbar .profile-details p:nth-child(1) {
+  color: #34495e;
+  font-size: 12px;
+}
+
+.main-navbar .profile-details p:nth-child(2) {
+  font-size: 12px;
+  color: #2980b9;
 }
 
 /*-------------progress page---------------*/
@@ -681,7 +763,7 @@ i.list-icon {
 .checklist-single .checklist-p p {
   font-size: 14px;
   float: left;
-  padding: 0px 2px;
+  padding: 0px 10px;
   width: 270px;
   height: 50px;
   line-height: 50px;
